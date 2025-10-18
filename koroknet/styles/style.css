@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #f2e9d5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    background: #f7ce94;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  /* ВСЕ КНОПКИ ТИПА: "Войти", "Зареристрироваться", "Панель администратора" и тд. */
+  .btn-sub {
+    padding: 0.75rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .btn-login, .btn-register, .btn-index, .btn-admin, .btn-create, .btn-lk, .btn-active, .btn-exit {
+    border: 2px solid #667eea;
+    color: black;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .btn-login:hover, .btn-register:hover, .btn-index:hover, .btn-admin:hover, .btn-create:hover, .btn-lk:hover {
+    background: #667eea;
+  }
+  .btn-active {
+    background: #f2e9d5;
+  }
+  .btn-exit {
+    background: red;
+    border: 2px solid black;
+  }
+  /* ГЛАВНЫЙ БЛОК create|admin */
+  .container {
+    width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  .admin-card, .booking-card  {
+    background: #f7ce94;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .admin-header, .booking-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .admin-header h1, .booking-header h1 {
+    margin-bottom: 0.5rem;
+  }
+  .request-card {
+    background: #f2e9d5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  label, b {
+    display: block;
+    margin-top: 0.5rem;
+  }
+  input, select { /*поля ввода данных*/
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  input:focus, select:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+  /* КНОПКИ -> "Сохранить изменениия" в admin| "Отправить" в create*/
+.body-form {
+    background: #f2e9d5;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-form p, .body-form h1
+{
+    margin-top: 10px;
+    text-align: center;
+}
+/* Контейнер входа в аккаунт и регистрации*/
+.login-container, .register-container{ 
+    background: #f7ce94;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 2rem;
+    margin-bottom: 15rem;
+    width: 500px;
+}
+.login-container{
+    width: 400px;
+}
+.index-link{
+    text-decoration: none;
+    color: #666;
+    transition: 0.1s ease;
+}
+.index-link:hover{
+    color: #5a6fd8;
+}
+/* ссылка на страничку входа|регистрации */
+.login-link, .register-link{
+    text-decoration: none;
+    color: #667eea;
+    transition: 0.1s ease;
+}
+.login-link:hover, .register-link:hover{
+    color: #5a6fd8;
+}
+.no-requests {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
